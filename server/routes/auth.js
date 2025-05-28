@@ -1,4 +1,4 @@
-// routes/auth.js - FIXED VERSION
+// routes/auth.js
 const router = require('express').Router();
 const User = require('../models/User');
 const bcrypt = require('bcrypt');
@@ -51,7 +51,7 @@ const generateOTP = () => {
     return Math.floor(100000 + Math.random() * 900000).toString();
 };
 
-// REGISTER - FIXED
+// REGISTER 
 router.post('/register', upload.single('profileImage'), async (req, res) => {
     const { name, email, password, companyName, age, dateOfBirth } = req.body;
 
@@ -116,7 +116,7 @@ router.post('/register', upload.single('profileImage'), async (req, res) => {
     }
 });
 
-// LOGIN - FIXED
+// LOGIN 
 router.post('/login', async (req, res) => {
     const { email, password } = req.body;
 

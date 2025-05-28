@@ -1,4 +1,3 @@
-// pages/Login.jsx - FIXED VERSION
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
@@ -23,9 +22,8 @@ const Wrapper = styled.div`
     min-height: 80%;
     padding: 20px;
     background-color: white;
-    border-radius: 10px; /* Slightly rounded edges */
+    border-radius: 10px;
     
-    /* Centering */
     display: flex;
     flex-direction: column;
     align-items: center;
